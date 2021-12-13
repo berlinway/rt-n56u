@@ -42,4 +42,9 @@ clean:
 romfs:
 	$(ROMFSINST) -p +x $(THISDIR)/$(SRC_NAME)/src/mentohust /usr/bin/bin_mentohust
 	$(ROMFSINST) -p +x $(THISDIR)/scripts/mentohust.sh /usr/bin/mentohust.sh
+	$(ROMFSINST) -p +r $(THISDIR)/scripts/b.mpf /etc/b.mpf
+	$(ROMFSINST) -p +r $(THISDIR)/scripts/c.mpf /etc/c.mpf
+	$(ROMFSINST) -p +r $(THISDIR)/scripts/ty.so /etc/ty.so
+	$(ROMFSINST) -p +x $(THISDIR)/scripts/random.sh /usr/bin/random.sh
+	$(ROMFSINST) -p +x $(THISDIR)/scripts/broken.sh /usr/bin/broken.sh
 
